@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Pure CSS device frames</title>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/d1-web@1.2.21/dist/d1.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/d1-web@1.2.21/dist/d1.min.js"></script>
+	<!-- CDN --REMOVE->
+	<link href="https://cdn.jsdelivr.net/npm/defram@0.0.0/dist/defram.min.css" rel="stylesheet">
+	<!-- local-npm-src REMOVE-->
+	<link href="index.css" rel="stylesheet">
+	<!-- -->
+</head>
+<body class="pad">
+<h1 class="mar">Pure CSS device frames - defram v0.0.0</h1>
+<div class="row flip -mar">
+  <div class="col-0">
+	<fieldset><legend>Options</legend>
+		<label><input type="checkbox" data-nodes="#dev" data-set="device-landscape"> Landscape</label><br>
+		<label><input type="checkbox" data-nodes="#dev" data-set="device-round-button"> Round button</label><br>
+		<label><input type="checkbox" data-nodes="#dev" data-set="device-scroll"> Scroll</label>
+	</fieldset>
+	<fieldset><legend>Color</legend>
+		<label><input type="radio" name="color" data-nodes="#dev" data-set="" checked> White</label><br>
+		<label><input type="radio" name="color" data-nodes="#dev" data-set="device-silver"> Silver</label><br>
+		<label><input type="radio" name="color" data-nodes="#dev" data-set="device-black"> Black</label>
+	</fieldset>
+	<fieldset><legend>Type</legend>
+		<label><input type="radio" name="type" data-nodes="#dev" data-set="" checked> Phone</label><br>
+		<label><input type="radio" name="type" data-nodes="#dev" data-set="device-tablet"> Tablet</label><br>
+		<label><input type="radio" name="type" data-nodes="#dev" data-set="device-laptop"> Laptop</label><br>
+		<label><input type="radio" name="type" data-nodes="#dev" data-set="device-desktop"> Desktop</label>
+	</fieldset>
+	<fieldset><legend>Size</legend>
+		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-xxs"> XXS</label><br>
+		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-xs"> XS</label><br>
+		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-s"> S</label><br>
+		<label><input type="radio" name="size" data-nodes="#dev" data-set="" checked> M</label><br>
+		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-l"> L</label><br>
+		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-xl"> XL</label><br>
+		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-xxl"> XXL</label>
+	</fieldset>
+	<fieldset><legend>Image</legend>
+		<label><input type="radio" name="pic" data-nodes="#dev img" data-attr="src" data-set="https://i.picsum.photos/id/1043/500/1000.jpg" checked> Color</label><br>
+		<label><input type="radio" name="pic" data-nodes="#dev img" data-attr="src" data-set="https://i.picsum.photos/id/1021/500/1000.jpg"> Grey</label><br>
+		<label><input type="radio" name="pic" data-nodes="#dev img" data-attr="src" data-set="https://i.picsum.photos/id/360/500/1000.jpg"> Red</label><br>
+		<label><input type="radio" name="pic" data-nodes="#dev img" data-attr="src" data-set="https://i.picsum.photos/id/844/500/1000.jpg"> Green</label><br>
+		<label><input type="radio" name="pic" data-nodes="#dev img" data-attr="src" data-set="https://i.picsum.photos/id/830/500/1000.jpg"> Blue</label>
+	</fieldset>
+  </div>
+  <div class="mar">
+	<div class="code">
+		<div id="dev" class="device">
+			<div><!-- extra div is required only if .device-scroll is used -->
+				<img src="https://i.picsum.photos/id/1043/500/1000.jpg" alt="Demo">
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "name": "defram",
+  "version": "0.0.1",
+  "description": "Pure CSS device frames",
+  "main": "dist/defram.css",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build:css": "postcss src/index.css -o dist/defram.css",
+    "minify:css": "postcss dist/defram.css -u cssnano -o dist/defram.min.css --no-map",
+    "build:docs": "copyfiles ./src/*.html ./docs -f",
+    "build:docs.cmt": "cross-var replace-in-file \"/REMOVE-/g\" \"\" \"docs/*.*\" --isRegex",
+    "build:version": "cross-var replace-in-file \"/0\\.0\\.0/g\" \"$npm_package_version\" \"dist/*.*\" --isRegex",
+    "build:docs.version": "cross-var replace-in-file \"/0\\.0\\.0/g\" \"$npm_package_version\" \"docs/*.*\" --isRegex",
+    "build": "npm run build:css && npm run minify:css && npm run build:docs && npm run build:docs.cmt && npm run build:docs.version && npm run build:version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvvkor/defram.git"
+  },
+  "keywords": [
+    "css",
+    "device",
+    "frames",
+    "lightweight"
+  ],
+  "author": "Vadim Korolev <vadimkor@yandex.ru> (https://github.com/vvvkor)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vvvkor/defram/issues"
+  },
+  "homepage": "https://github.com/vvvkor/defram#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "perfectionist": "^2.4.0",
+    "postcss-calc": "^7.0.1",
+    "postcss-cli": "^7.1.0",
+    "postcss-custom-properties": "^8.0.11",
+    "postcss-discard-comments": "^2.0.4",
+    "cross-var": "^1.1.0",
+    "replace-in-file": "^3.4.4"
+  }
+}
