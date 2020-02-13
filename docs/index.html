@@ -1,76 +1,93 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Pure CSS device frames - defram</title>
+    <title>CSS device frames - defram</title>
     <meta charset="utf-8">
     <meta name="viewport" 
       content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/d1-web@1.2.21/dist/d1.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/d1-web@1.2.21/dist/d1.min.js"></script>
 	<!-- CDN -->
-	<link href="https://cdn.jsdelivr.net/npm/defram@0.0.4/dist/defram.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/defram@0.0.5/dist/defram.min.css" rel="stylesheet">
 	<!-- local-npm-src ->
 	<link href="index.css" rel="stylesheet">
 	<!-- -->
+	<style>
+	/*:root{--topbar:3em;}*/
+	</style>
 </head>
 <body class="pad">
-<h1 class="mar">
-	Pure CSS device frames &mdash;
+<!--h1 class="mar">
+	CSS device frames &mdash;
 	<span class="btn bg-i">defram</span>
-	<span class="text-n small">v0.0.4</span>
+	<span class="text-n small">v0.0.5</span>
 	@ <a href="https://github.com/vvvkor/defram">GitHub</a>
-</h1>
-<div class="row flip -mar">
-  <div class="col-0">
-	<fieldset><legend>Options</legend>
-		<label><input type="checkbox" data-nodes="#dev" data-set="device-landscape"> Landscape</label><br>
-		<label><input type="checkbox" data-nodes="#dev" data-set="device-round-button"> Round button</label><br>
-		<label><input type="checkbox" data-nodes="#dev" data-set="device-scroll"> Scroll</label>
-	</fieldset>
-	<fieldset><legend>Color</legend>
-		<label><input type="radio" name="color" data-nodes="#dev" data-set="" checked> White</label><br>
-		<label><input type="radio" name="color" data-nodes="#dev" data-set="device-silver"> Silver</label><br>
-		<label><input type="radio" name="color" data-nodes="#dev" data-set="device-black"> Black</label>
-	</fieldset>
-	<fieldset><legend>Type</legend>
-		<label><input type="radio" name="type" data-nodes="#dev" data-set="" checked> Phone</label><br>
-		<label><input type="radio" name="type" data-nodes="#dev" data-set="device-tablet"> Tablet</label><br>
-		<label><input type="radio" name="type" data-nodes="#dev" data-set="device-laptop"> Laptop</label><br>
-		<label><input type="radio" name="type" data-nodes="#dev" data-set="device-desktop"> Desktop</label>
-	</fieldset>
-	<fieldset><legend>Size</legend>
-		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-xxs"> XXS</label><br>
-		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-xs"> XS</label><br>
-		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-s"> S</label><br>
-		<label><input type="radio" name="size" data-nodes="#dev" data-set="" checked> M</label><br>
-		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-l"> L</label><br>
-		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-xl"> XL</label><br>
-		<label><input type="radio" name="size" data-nodes="#dev" data-set="device-xxl"> XXL</label>
-	</fieldset>
-	<fieldset><legend>Image</legend>
-		<label><input type="radio" name="pic" data-nodes="#dev img" data-attr="src" data-set="https://i.picsum.photos/id/1043/500/1000.jpg" checked> Color</label><br>
-		<label><input type="radio" name="pic" data-nodes="#dev img" data-attr="src" data-set="https://i.picsum.photos/id/1021/500/1000.jpg"> Grey</label><br>
-		<label><input type="radio" name="pic" data-nodes="#dev img" data-attr="src" data-set="https://i.picsum.photos/id/360/500/1000.jpg"> Red</label><br>
-		<label><input type="radio" name="pic" data-nodes="#dev img" data-attr="src" data-set="https://i.picsum.photos/id/844/500/1000.jpg"> Green</label><br>
-		<label><input type="radio" name="pic" data-nodes="#dev img" data-attr="src" data-set="https://i.picsum.photos/id/830/500/1000.jpg"> Blue</label>
-	</fieldset>
-  </div>
-  <div class="mar">
-	<div class="code">
-		<div id="dev" class="device">
-			<div><!-- extra div is required only if .device-scroll is used -->
-				<img src="https://i.picsum.photos/id/1043/500/1000.jpg" alt="Demo">
-			</div>
-		</div>
-	</div>
-	<p>
-	<div class="code">
-		<div class="device device-desktop device-scroll device-s device-black">
-			<iframe src="https://en.m.wikipedia.org/wiki/Cascading_Style_Sheets"></iframe>
-		</div>
-	</div>
+</h1-->
 
-  </div>
+<div class="">
+	<b>defram</b>
+	<span class="text-n">v0.0.5</span>
+	&mdash; CSS device frames
+	&mdash; <a class="text-n" href="https://github.com/vvvkor/defram">GitHub</a>
 </div>
+<div class="mar">
+	<select data-nodes="#dev">
+		<option value="" selected>phone</option>
+		<option value="device-landscape">phone landscape</option>
+		<option value="device-tablet">tablet</option>
+		<option value="device-tablet device-landscape">tablet landscape</option>
+		<option value="device-laptop">laptop</option>
+		<option value="device-desktop">desktop</option>
+	</select>
+	<select data-nodes="#dev">
+		<option value="" selected>white</option>
+		<option value="device-silver">silver</option>
+		<option value="device-black">black</option>
+	</select>
+	<select data-nodes="#dev">
+		<option value="device-xxs">xxs</option>
+		<option value="device-xs">xs</option>
+		<option value="device-s">s</option>
+		<option value="" selected>m</option>
+		<option value="device-l">l</option>
+		<option value="device-xl">xl</option>
+		<option value="device-xxl">xxl</option>
+	</select>
+	<select data-nodes="#dev">
+		<option value="" selected>no scroll</option>
+		<option value="device-scroll device-scroll-thin">thin scroll</option>
+	</select>
+	<select data-nodes="#dev">
+		<option value="device-button-round" selected>round button</option>
+		<option value="device-button-long">long button</option>
+		<option value="device-button-square">square button</option>
+		<option value="">no button</option>
+	</select>
+	<select data-nodes="#dev img" data-attr="src">
+		<option value="https://i.picsum.photos/id/1043/500/1000.jpg" selected>color image</option>
+		<option value="https://i.picsum.photos/id/1021/500/1000.jpg">grey image</option>
+		<option value="https://i.picsum.photos/id/360/500/1000.jpg">red image</option>
+		<option value="https://i.picsum.photos/id/844/500/1000.jpg">green image</option>
+		<option value="https://i.picsum.photos/id/830/500/1000.jpg">blue</option>
+		<option value="">no image</option>
+	</select>
+</div>
+
+<p>
+<div class="code">
+<div id="dev" class="device">
+	<div><!-- extra div is required only if .device-scroll is used -->
+		<img src="https://i.picsum.photos/id/1043/500/1000.jpg" alt="Demo">
+	</div>
+</div>
+</div>
+<p>
+<div class="code">
+<div class="device device-desktop device-scroll device-s device-black">
+	<iframe src="https://en.m.wikipedia.org/wiki/Cascading_Style_Sheets"></iframe>
+</div>
+</div>
+
+
 </body>
 </html>

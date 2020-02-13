@@ -1,7 +1,7 @@
 {
   "name": "defram",
-  "version": "0.0.4",
-  "description": "Pure CSS device frames",
+  "version": "0.0.5",
+  "description": "CSS device frames",
   "main": "dist/defram.css",
   "directories": {
     "doc": "docs"

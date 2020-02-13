@@ -1,6 +1,6 @@
 # defram
 
-Pure CSS device frames.  
+CSS device frames.  
 [Demo](https://vvvkor.github.io/defram/)
 
 ## Get started
@@ -36,8 +36,9 @@ Default is medium sized white phone with portrait orientation.
 ### Modificator classes
 
 - ``device-landscape``
-- ``device-round-button``
+- ``device-button-round``
 - ``device-scroll`` (extra nested ``div`` required)
+- ``device-scroll-thin``
 - ``device-black``
 - ``device-silver``
 - ``device-tablet``
