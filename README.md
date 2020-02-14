@@ -5,23 +5,21 @@ CSS device frames.
 
 ## Get started
 
-### Install manually
-
-Add the [distributed](https://github.com/vvvkor/defram/archive/master.zip) CSS to the head of your document.
+Download and add the [distributed](https://github.com/vvvkor/defram/archive/master.zip) CSS to the head of your document.
 
 ```
 <link rel="stylesheet" href="/css/defram.min.css">
 ``` 
 
-### Use from CDN
-
-### [jsDelivr](https://www.jsdelivr.com/package/npm/defram)
+Or use CDN like [jsDelivr](https://www.jsdelivr.com/package/npm/defram)
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/defram/defram.min.css" rel="stylesheet">
 ```
 
 ## Usage
+
+More examples on the [demo page](https://vvvkor.github.io/defram/).
 
 Default is medium sized white phone with portrait orientation.
 
@@ -31,19 +29,35 @@ Default is medium sized white phone with portrait orientation.
 </div>
 ```
 
-[More examples](https://vvvkor.github.io/defram/)
+Enable image scrolling with ``.device-scroll`` and extra nested ``div``.
+
+```html
+<div class="device device-scroll">
+  <div>
+    <img src="..." alt="">
+  </div>
+</div>
+```
+
+Embed ``iframe`` with live resource.
+
+```html
+<div class="device device-scroll">
+  <iframe src="..." alt=""></iframe>
+</div>
+```
 
 ### Modificator classes
 
+- ``device-tablet``
+- ``device-laptop``
+- ``device-desktop``
 - ``device-landscape``
 - ``device-button-round``
 - ``device-scroll`` (extra nested ``div`` required)
 - ``device-scroll-thin``
 - ``device-black``
 - ``device-silver``
-- ``device-tablet``
-- ``device-laptop``
-- ``device-desktop``
 - ``device-xxs``
 - ``device-xs``
 - ``device-s``

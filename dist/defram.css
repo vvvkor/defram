@@ -1,4 +1,4 @@
-/*! defram v0.0.5 */
+/*! defram v0.0.6 */
 
 .device {
     display: inline-block;
@@ -251,26 +251,60 @@
     border-color: #555 #666 #666 #555;
 }
 
-.device-xxs {
-    font-size: .5rem;
-}
-
-.device-xs {
-    font-size: .65rem;
-}
-
-.device-s {
+.device {
     font-size: .8rem;
 }
 
+.device-xxs {
+    font-size: .35rem;
+}
+
+.device-xs {
+    font-size: .5rem;
+}
+
+.device-s {
+    font-size: .65rem;
+}
+
 .device-l {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .device-xl {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
 }
 
 .device-xxl {
-    font-size: 2rem;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 899px) {
+    .device {
+        font-size: .65rem;
+    }
+
+    .device-xxs {
+        font-size: .35rem;
+    }
+
+    .device-xs {
+        font-size: .45rem;
+    }
+
+    .device-s {
+        font-size: .55rem;
+    }
+
+    .device-l {
+        font-size: .8rem;
+    }
+
+    .device-xl {
+        font-size: 1rem;
+    }
+
+    .device-xxl {
+        font-size: 1.25rem;
+    }
 }

@@ -90,16 +90,23 @@
 .device-black{color:#333;}
 .device-black:before{background:#666;}
 .device-black:after{border-color:#555 #666 #666 #555;}
-/*
-.device-gold{color:#e1c868;}
-.device-gold:before{background:#997;}
-.device-gold:after{border-color:#aa6 #bb7 #bb7 #aa6;}
-*/
 
 /* size */
-.device-xxs{font-size:.5rem;}
-.device-xs{font-size:.65rem;}
-.device-s{font-size:.8rem;}
-.device-l{font-size:1.25rem;}
-.device-xl{font-size:1.6rem;}
-.device-xxl{font-size:2rem;}
+.device{font-size:.8rem;}
+.device-xxs{font-size:.35rem;}
+.device-xs{font-size:.5rem;}
+.device-s{font-size:.65rem;}
+.device-l{font-size:1rem;}
+.device-xl{font-size:1.25rem;}
+.device-xxl{font-size:1.6rem;}
+
+@media (max-width: 899px){
+	/* mobile */
+	.device{font-size:.65rem;}
+	.device-xxs{font-size:.35rem;}
+	.device-xs{font-size:.45rem;}
+	.device-s{font-size:.55rem;}
+	.device-l{font-size:.8rem;}
+	.device-xl{font-size:1rem;}
+	.device-xxl{font-size:1.25rem;}
+}
