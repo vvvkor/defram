@@ -53,11 +53,13 @@ Embed ``iframe`` with live resource.
 - ``device-laptop``
 - ``device-desktop``
 - ``device-landscape``
-- ``device-button-round``
 - ``device-scroll`` (extra nested ``div`` required)
 - ``device-scroll-thin``
 - ``device-black``
 - ``device-silver``
+- ``device-button-round``
+- ``device-button-square``
+- ``device-button-long``
 - ``device-xxs``
 - ``device-xs``
 - ``device-s``
