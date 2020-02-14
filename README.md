@@ -34,7 +34,7 @@ Enable image scrolling with ``.device-scroll`` and extra nested ``div``.
 ```html
 <div class="device device-scroll">
   <div>
-    <img src="...">
+    <img src="..." alt="">
   </div>
 </div>
 ```
@@ -43,7 +43,7 @@ Embed ``iframe`` with live resource.
 
 ```html
 <div class="device device-scroll">
-  <iframe src="..." alt=""></iframe>
+  <iframe src="..."></iframe>
 </div>
 ```
 
