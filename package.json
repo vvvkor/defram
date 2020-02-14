@@ -1,6 +1,6 @@
 {
   "name": "defram",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "CSS device frames",
   "main": "dist/defram.css",
   "directories": {

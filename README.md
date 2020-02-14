@@ -7,19 +7,19 @@ CSS device frames.
 
 Download and add the [distributed](https://github.com/vvvkor/defram/archive/master.zip) CSS to the head of your document.
 
-```
+```html
 <link rel="stylesheet" href="/css/defram.min.css">
 ``` 
 
-Or use CDN like [jsDelivr](https://www.jsdelivr.com/package/npm/defram)
+Or use CDN like [jsDelivr](https://www.jsdelivr.com/package/npm/defram).
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/defram/defram.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/defram/defram.min.css">
 ```
 
 ## Usage
 
-More examples on the [demo page](https://vvvkor.github.io/defram/).
+More examples on [demo page](https://vvvkor.github.io/defram/).
 
 Default is medium sized white phone with portrait orientation.
 
@@ -34,7 +34,7 @@ Enable image scrolling with ``.device-scroll`` and extra nested ``div``.
 ```html
 <div class="device device-scroll">
   <div>
-    <img src="..." alt="">
+    <img src="...">
   </div>
 </div>
 ```
