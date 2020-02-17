@@ -14,7 +14,7 @@ Download and add the [distributed](https://github.com/vvvkor/defram/archive/mast
 Or use CDN like [jsDelivr](https://www.jsdelivr.com/package/npm/defram).
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/defram/defram.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/defram/dist/defram.min.css">
 ```
 
 ## Usage
