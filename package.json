@@ -1,6 +1,6 @@
 {
   "name": "defram",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CSS device frames",
   "main": "dist/defram.css",
   "directories": {
@@ -34,13 +34,14 @@
   "homepage": "https://github.com/vvvkor/defram#readme",
   "dependencies": {},
   "devDependencies": {
+    "copyfiles": "^2.3.0",
+    "cross-var": "^1.1.0",
     "cssnano": "^4.1.10",
     "perfectionist": "^2.4.0",
     "postcss-calc": "^7.0.1",
     "postcss-cli": "^7.1.0",
     "postcss-custom-properties": "^8.0.11",
     "postcss-discard-comments": "^2.0.4",
-    "cross-var": "^1.1.0",
     "replace-in-file": "^3.4.4"
   }
 }
